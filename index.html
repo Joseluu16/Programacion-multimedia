@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+<head>
+    <title>Clase 2º DAM</title>
+</head>
+<body>
+    <h1>Clase 2º DAM</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>DNI</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="alumno : ${alumnos}">
+            <td th:text="${alumno.id}"></td>
+            <td th:text="${alumno.nombre}"></td>
+            <td th:text="${alumno.apellido}"></td>
+            <td th:text="${alumno.edad}"></td>
+            <td th:text="${alumno.dni}"></td>
+        </tr>
+    </table>
+    <a href="/agregar">Agregar Alumno</a>
+</body>
+</html>
+

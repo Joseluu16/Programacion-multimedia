@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+<head>
+    <title>Agregar Alumno</title>
+</head>
+<body>
+    <h1>Agregar Alumno</h1>
+    <form action ="" method="post" th:object="${alumno}">
+        <label>Nombre:</label>
+        <input type="text" th:field="*{nombre}" /><br/>
+        <label>Apellido:</label>
+        <input type="text" th:field="*{apellido}" /><br/>
+        <label>Edad:</label>
+        <input type="number" th:field="*{edad}" /><br/>
+        <label>DNI:</label>
+        <input type="text" th:field="*{dni}" /><br/>
+  
+    </form>
+    <button> Guardar </button>
+</body>
+</html>
